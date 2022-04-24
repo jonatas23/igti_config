@@ -22,9 +22,9 @@ spring:
 #          uri: http://localhost:8081
           uri: lb://PRESTADOR-SERVICO
           predicates:
-            - Path=/prestador/**
+            - Path=/ps/**
         - id: consumidor
 #          uri: http://localhost:8082
           uri: lb://CONSUMIDOR
           predicates:
-            - Path=/consumidor/**
+            - Path=/cons/**
