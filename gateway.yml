@@ -18,13 +18,13 @@ spring:
           enabled: true
           lower-case-service-id: true
       routes:
-        - id: prestador-servico
+        - id: prestador
 #          uri: http://localhost:8081
           uri: lb://PRESTADOR-SERVICO
           predicates:
-            - Path=/ps/**
+            - Path=/prestador/**
         - id: consumidor
 #          uri: http://localhost:8082
           uri: lb://CONSUMIDOR
           predicates:
-            - Path=/cons/**
+            - Path=/consumidor/**
