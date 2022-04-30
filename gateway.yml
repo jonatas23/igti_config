@@ -11,20 +11,20 @@ eureka:
       wait-time-in-ms-when-sync-empty: 3000
 
 #spring:
- # cloud:
-  #  gateway:
-   #   discovery:
-    #    locator:
-     #     enabled: true
-      #    lower-case-service-id: true
-      #routes:
-       # - id: prestador
-#          uri: http://localhost:8081
-       #   uri: lb://PRESTADOR-SERVICO
-        #  predicates:
-         #   - Path=/prestador/**
-       # - id: consumidor
-#          uri: http://localhost:8082
-        #  uri: lb://CONSUMIDOR
-         # predicates:
-          #  - Path=/consumidor/**
+#  cloud:
+#    gateway:
+#      discovery:
+#        locator:
+#          enabled: true
+#          lower-case-service-id: true
+#      routes:
+#        - id: prestador
+##          uri: http://localhost:8081
+#          uri: lb://PRESTADOR-SERVICO
+#          predicates:
+#            - Path=/prestador/**
+#        - id: consumidor
+##          uri: http://localhost:8082
+#          uri: lb://CONSUMIDOR
+#          predicates:
+#            - Path=/consumidor/**

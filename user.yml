@@ -1,0 +1,30 @@
+server:
+  port:
+    9002
+
+eureka:
+  instance:
+    hostname: localhost
+    port: 9000
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+    server:
+      wait-time-in-ms-when-sync-empty: 3000    
+
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      database: user_db
+      host: 127.0.0.1
+      port: 27017
+      username: root
+      password: root
+      repositories:
+        enabled: true
+jwt:
+  secret: BvPHGM8C0ia4uOuxxqPD5DTbWC9F9TWvPStp3pb7ARo0oK2mJ3pd3YG4lxA9i8bj6OTbadwezxgeEByY
+  expiration: 86400
