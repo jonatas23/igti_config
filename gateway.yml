@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: localhost
+    hostname: discovery
     port: 9000
   client:
     registerWithEureka: true
