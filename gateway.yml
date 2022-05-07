@@ -4,8 +4,8 @@ eureka:
     hostname: discovery
     port: 9000
   client:
-    registerWithEureka: true
-    fetchRegistry: true
+    registerWithEureka: false
+    fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
     healthcheck:
