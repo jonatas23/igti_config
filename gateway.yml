@@ -4,10 +4,10 @@ eureka:
     hostname: discovery
     port: 9000
   client:
+    enabled: true
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
     server:
       wait-time-in-ms-when-sync-empty: 3000
-    preferIpAddress: true
